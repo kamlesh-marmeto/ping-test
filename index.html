@@ -6,18 +6,17 @@
 <body>
     <div id="messaging-inbox"></div>
     <script>
-      window.messagingWidgetConfig = 
-      {
-        "widgetId":"6846668f-7216-427d-ab05-dc1042037f00",
-        "apiBaseUrl":"https://dev-api.marmeto.org/ping/v2",
-        "socketUrl":"https://dev-api.marmeto.org",
-        "userId":"testId",
-        "userEmail":"test@gmail.com",
-        "userName":"test name",
-        "avatarUrl":null, 
-        container: '#messaging-inbox'
-      };
+        window.messagingWidgetConfig = {
+            "widgetId": "6846668f-7216-427d-ab05-dc1042037f00",
+            "apiBaseUrl": "https://dev-api.marmeto.org/ping/v2",
+            "socketUrl": "https://dev-api.marmeto.org/ping",
+            "userId": "{{USER_ID}}",
+            "userEmail": "{{USER_EMAIL}}",
+            "userName": "{{USER_NAME}}",
+            "avatarUrl": null,
+            container: '#messaging-inbox',
+        };
     </script>
-    <script src="https://dev-api.marmeto.org/scripts/messaging-embed.js"></script>
+    <script src="https://dev-api.marmeto.org/ping/scripts/messaging-embed.js" defer></script>
 </body>
 </html>
